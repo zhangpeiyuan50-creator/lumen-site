@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>识光 LUMEN — 被看见，或者不存在</title>
+<meta name="description" content="识光 LUMEN 做 GEO（生成式引擎优化）：把客户的知识资产，翻译成 AI 愿意引用、能够引用、且引用准确的结构。">
+<link rel="icon" type="image/svg+xml" href="assets/img/lumen-mark.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 预加载：光圈装配 -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="mark" id="preloaderMark"></div>
+  <div class="pct"><span id="pct">000</span> / SAMPLING LAYER</div>
+</div>
+
+<!-- 页头 -->
+<header class="site-head">
+  <a class="lockup" href="#top" aria-label="识光 LUMEN 首页">
+    <img src="assets/img/lumen-logo-reversed.svg" alt="" style="height:18px">
+    <span class="mono">识光</span>
+  </a>
+  <nav class="site-nav" aria-label="主导航">
+    <a href="#core">内核</a>
+    <a href="#metrics">方法</a>
+    <a href="#scan">采样</a>
+    <a href="#orb">形象</a>
+    <a href="#contact">联系</a>
+    <span class="status mono"><i></i>ONLINE</span>
+  </nav>
+  <i class="scroll-progress" id="scrollProgress" aria-hidden="true"></i>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <span class="coord coord--tl">GRID / 28 PX</span>
+    <span class="coord coord--tr">CENTER / AXIS</span>
+    <span class="coord coord--bl">INK #0B0B0F · PAPER #F2F1EC · BEAM #2B37FF · SIGNAL #D4FF00</span>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">
+          <span class="rule"></span>
+          <span class="mono">GEO / GENERATIVE ENGINE OPTIMIZATION · 生成式引擎优化</span>
+        </div>
+        <h1>让 <span class="ai">AI</span> 引用你的<br>那一版答案</h1>
+        <p class="lede">搜索引擎的时代，品牌争的是排名；生成式引擎的时代，答案只有一段，品牌争的是被引用。识光把客户的知识资产，翻译成 <b>AI 愿意引用、能够引用、且引用准确</b> 的结构。</p>
+        <div class="cta-row">
+          <a class="primary" href="#contact">预约演示</a>
+          <a class="ghost" href="#core">阅读内核</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div id="heroMark"></div>
+      </div>
+    </div>
+
+    <div class="hero-strip">
+      <span class="mono">SAMPLED <b id="qCount">12,486</b> QUERIES / DAY</span>
+      <span class="mono">ENGINES · <b>CHATGPT / GEMINI / PERPLEXITY / 元宝 / 千问 / DEEPSEEK / 豆包</b></span>
+      <span class="mono">UPDATED <b id="today">14.09.2026</b> · XI'AN</span>
+    </div>
+  </section>
+
+  <!-- 01 内核 -->
+  <section class="sec" id="core">
+    <div class="sec-head">
+      <span class="no">01 / CORE</span>
+      <h2>内核</h2>
+      <span class="mono">POSITIONING · NARRATIVE</span>
+    </div>
+    <div class="trim"></div>
+
+    <p class="core-intro" id="coreIntro" style="margin-top:clamp(36px,6vh,64px)">搜索引擎的时代，品牌争的是排名；生成式引擎的时代，答案只有一段，品牌争的是被引用。我们的工作是把客户的知识资产，翻译成 <span class="kw">AI 愿意引用、能够引用、且引用准确</span> 的结构。</p>
+
+    <div class="pillars">
+      <article class="pillar rv">
+        <span class="mono">01 / WHAT WE SEE</span>
+        <h3>光不可见，<br>但可度量</h3>
+        <p>用户问 AI 的那一瞬间，你的品牌是否被"看见"，此前无法观测。识光把这件事变成一条可读的曲线——可见度指数、引用位置、竞品份额。</p>
+      </article>
+      <article class="pillar rv">
+        <span class="mono">02 / WHAT WE DO</span>
+        <h3>不是优化排名，<br>是改写答案</h3>
+        <p>我们不堆关键词。我们重构知识结构、来源可信度与语义密度，让模型在生成答案时，把你的表述当作最可靠的那一版。</p>
+      </article>
+      <article class="pillar rv">
+        <span class="mono">03 / HOW WE WORK</span>
+        <h3>工程，<br>不是玄学</h3>
+        <p>每一次建议都来自可复现的采样：跨引擎、跨模型、跨时间的批量查询与结构化比对。结论必须能被第二次验证。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 品牌主张 -->
+  <section class="sec claim">
+    <span class="mono">BRAND CLAIM / 品牌主张</span>
+    <h2><span class="l1">被看见，</span><br><span class="b l2">或者不存在。</span></h2>
+    <p>这是 GEO 时代唯一真实的二分法。搜索结果页还有第十名可以苟活；当 AI 只给一段答案，没被引用就等于没有被检索过。以<span class="hl">深色为默认画布</span>——绝大部分信号运行在你看不见的地方，我们的工作就是把其中一小段点亮。</p>
+  </section>
+
+  <!-- 02 方法 / 指标 -->
+  <section class="sec" id="metrics">
+    <div class="sec-head">
+      <span class="no">02 / METHOD</span>
+      <h2>可度量，才可优化</h2>
+      <span class="mono">VISIBILITY INDEX · STRUCTURED SAMPLING</span>
+    </div>
+    <div class="trim"></div>
+
+    <div class="metrics-grid" style="margin-top:clamp(36px,6vh,64px)">
+      <div class="metrics-copy rv">
+        <h3>六个指标，<br>一条可读的曲线</h3>
+        <p>提及率、引用率、相对声量、位次、准确率、内容侧质量——每一次采样都落到 <b>结构化数据</b>，每一次结论都能被第二次验证。我们承认边界：哪些能测、哪些是置信区间，<b>直说</b>。</p>
+      </div>
+      <div>
+        <div class="bars" id="bars">
+          <div class="bar"><span class="k">INDEX</span><span class="track"><span class="fill" data-w="78%"></span></span><span class="v" data-n="78">0</span></div>
+          <div class="bar"><span class="k">CITED</span><span class="track"><span class="fill" data-w="64%"></span></span><span class="v" data-n="64">0</span></div>
+          <div class="bar"><span class="k">SHARE</span><span class="track"><span class="fill signal" data-w="31%"></span></span><span class="v" data-n="31">0</span></div>
+        </div>
+        <p class="bars-note mono">VISIBILITY INDEX · CHATGPT · GEMINI / PERPLEXITY · N=12,486 · 14.09.2026<br>示意数据 · 以正式采样周报为准</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 采样层 -->
+  <section class="sec scan" id="scan">
+    <div class="sec-head">
+      <span class="no">03 / SIGNAL SAMPLING</span>
+      <h2>扫描采样层</h2>
+      <span class="mono">6PX ON / 3PX OFF</span>
+    </div>
+    <div class="scan-stage">
+      <div class="scan-word" aria-label="LUMEN">LUMEN</div>
+    </div>
+    <div class="scan-cap">
+      <span class="mono">FIG 5.1 — SCANLINE SAMPLING / 扫描采样度：仅用于大号展示字，正文文字禁用</span>
+      <span class="mono" id="scanStatus">STATUS / STANDBY</span>
+    </div>
+  </section>
+
+  <!-- 04 形象 -->
+  <section class="sec" id="orb">
+    <div class="sec-head">
+      <span class="no">04 / IP · ORB</span>
+      <h2>采样单元 ORB</h2>
+      <span class="mono">STATE MACHINE / NEUTRAL → SCANNING → CAPTURED</span>
+    </div>
+    <div class="trim"></div>
+
+    <div class="orb-grid" style="margin-top:clamp(36px,6vh,64px)">
+      <div class="orb-stage rv">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <img src="assets/img/lumen-ip-orb-neutral.svg" class="on" data-state="neutral" alt="ORB 待机态">
+        <img src="assets/img/lumen-ip-orb-scanning.svg" data-state="scanning" alt="ORB 采样态">
+        <img src="assets/img/lumen-ip-orb-captured.svg" data-state="captured" alt="ORB 捕获态">
+      </div>
+      <div class="orb-copy rv">
+        <h3 id="orbTitle">待机 / NEUTRAL</h3>
+        <p id="orbBody">ORB 是识光的采样单元。待机时它只监听：引擎在回答什么，答案里有没有你。</p>
+        <div class="orb-states" role="tablist" aria-label="ORB 状态">
+          <button class="on" data-state="neutral">NEUTRAL</button>
+          <button data-state="scanning">SCANNING</button>
+          <button data-state="captured">CAPTURED</button>
+        </div>
+        <p class="orb-read mono" id="orbRead">STATE / 01 · LISTENING</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="sec contact" id="contact">
+    <span class="mono" style="display:block;margin-bottom:22px">CONTACT / 联系</span>
+    <h2>你现在没被引用，<br>就是<span class="b">没被看见</span>。</h2>
+    <a class="cta" href="mailto:hello@example.com">预约演示 / BOOK A DEMO</a>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="spec">
+      <span class="mono">INK #0B0B0F · PAPER #F2F1EC</span>
+      <span class="mono">BEAM #2B37FF · SIGNAL #D4FF00</span>
+      <span class="mono">BAHNSCHRIFT · NOTO SANS SC · CONSOLAS</span>
+      <span class="mono">NO GLASS. NO GRADIENT. NO GHOSTING.</span>
+    </div>
+    <div class="base">
+      <img src="assets/img/lumen-logo-reversed.svg" alt="识光 LUMEN">
+      <span class="mono">© 2026 识光 LUMEN · LUMEN BRAND IDENTITY SYSTEM · V2.0</span>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

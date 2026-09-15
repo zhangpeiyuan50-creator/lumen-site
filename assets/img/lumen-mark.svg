@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="LUMEN Mark">
+  <title>LUMEN Mark</title>
+  <!-- Aperture ring: 8 measured segments -->
+  <circle cx="60" cy="60" r="42" fill="none" stroke="#0F0F14" stroke-width="9"
+          stroke-dasharray="24 8.987" stroke-linecap="butt"/>
+  <!-- The lit segment: 45deg - 77.7deg -->
+  <path d="M89.70,30.30 A42,42 0 0 0 69.00,19.00" fill="none" stroke="#0B4FFF" stroke-width="9" stroke-linecap="butt"/>
+  <!-- Source -->
+  <circle cx="60" cy="60" r="11" fill="#0F0F14"/>
+</svg>

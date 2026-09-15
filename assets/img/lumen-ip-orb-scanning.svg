@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="LUMEN ORB-01 scanning">
+  <!-- ORB-01 / 光目 — 采样中
+       变量：刻度环顺时针转 22.5°（半格）· 眼光转 Beam 蓝 · 右侧发出扫描射线 -->
+  <g fill="currentColor" opacity=".38">
+    <path d="M104,40 H118 V42 H104 Z"/>
+    <path d="M104,50 H118 V52 H104 Z"/>
+    <path d="M104,60 H118 V62 H104 Z"/>
+    <path d="M98,30 H118 V32 H98 Z"/>
+    <path d="M98,70 H118 V72 H98 Z"/>
+  </g>
+  <g transform="rotate(22.5 60 52)">
+    <g fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="butt">
+      <circle cx="60" cy="52" r="38" stroke-dasharray="21.9 7.945"/>
+      <path d="M92.91,33.00 A38,38 0 0 0 79.00,19.09"/>
+    </g>
+  </g>
+  <circle class="orb-eye" cx="60" cy="52" r="11" fill="#2B37FF"/>
+  <path d="M55.5,88 H64.5 V124 H55.5 Z" fill="currentColor"/>
+  <path d="M22,124 H98 V133 H22 Z" fill="currentColor"/>
+</svg>

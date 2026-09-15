@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="600" height="120" role="img" aria-label="LUMEN">
+  <title>LUMEN Primary Lockup</title>
+
+  <!-- Mark: aperture, 8 measured segments, one lit -->
+  <g>
+    <circle cx="60" cy="60" r="42" fill="none" stroke="#0F0F14" stroke-width="9" stroke-dasharray="24 8.987" stroke-linecap="butt"/>
+    <path d="M89.70,30.30 A42,42 0 0 0 69.00,19.00" fill="none" stroke="#0B4FFF" stroke-width="9" stroke-linecap="butt"/>
+    <circle cx="60" cy="60" r="11" fill="#0F0F14"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(128,0)" fill="#0F0F14">
+    <g transform="translate(0,0)"><path d="M0,10 H13 V97 H70 V110 H0 Z"/></g>
+    <g transform="translate(92,0)"><path d="M0,10 V75 A35,35 0 0 0 70,75 V10 H57 V75 A22,22 0 0 1 13,75 V10 Z"/></g>
+    <g transform="translate(184,0)">
+      <path d="M0,10 H13 V110 H0 Z"/>
+      <path d="M79,10 H92 V110 H79 Z"/>
+      <path d="M0,10 H13 L52.5,110 H39.5 Z"/>
+      <path d="M79,10 H92 L52.5,110 H39.5 Z"/>
+    </g>
+    <g transform="translate(298,0)">
+      
+      <path d="M0,10 H70 V23 H13 V52 H70 V65 H13 V97 H70 V110 H0 Z"/>
+    </g>
+    <g transform="translate(396,0)">
+      <path d="M0,10 H13 V110 H0 Z"/>
+      <path d="M63,10 H76 V110 H63 Z"/>
+      <path d="M0,10 H13 L76,110 H63 Z"/>
+    </g>
+  </g>
+</svg>

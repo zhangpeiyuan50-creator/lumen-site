@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="LUMEN App Icon">
+  <title>LUMEN App Icon</title>
+  <defs>
+    <linearGradient id="lumenVoid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14141A"/>
+      <stop offset="100%" stop-color="#06060A"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#lumenVoid)"/>
+
+  <g transform="translate(256,256) scale(2.6) translate(-60,-60)">
+    <circle cx="60" cy="60" r="42" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-dasharray="24 8.987" stroke-linecap="butt"/>
+    <path d="M89.70,30.30 A42,42 0 0 0 69.00,19.00" fill="none" stroke="#6E9BFF" stroke-width="9" stroke-linecap="butt"/>
+    <circle cx="60" cy="60" r="11" fill="#FFFFFF"/>
+  </g>
+</svg>

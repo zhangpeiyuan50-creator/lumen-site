@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="LUMEN ORB-01 neutral">
+  <!-- ORB-01 / 光目 — 中性待机态
+       构成：8 段刻度环（观测刻度）+ 中心光源眼 + 细颈 + 平切底座
+       全部几何在同一 stroke-width=9 的语言下，与 LUMEN Mark 同源 -->
+  <g fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="butt">
+    <circle cx="60" cy="52" r="38" stroke-dasharray="21.9 7.945"/>
+    <path d="M92.91,33.00 A38,38 0 0 0 79.00,19.09"/>
+  </g>
+  <circle class="orb-eye" cx="60" cy="52" r="11" fill="currentColor"/>
+  <path d="M55.5,88 H64.5 V124 H55.5 Z" fill="currentColor"/>
+  <path d="M22,124 H98 V133 H22 Z" fill="currentColor"/>
+</svg>
