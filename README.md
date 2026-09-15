@@ -45,7 +45,7 @@ lumen-site/
 
 | 位置 | 现值 | 说明 |
 |---|---|---|
-| 联系邮箱 | `index.html` → `mailto:hello@example.com` | 待确认 |
+| 联系邮箱 | `1037161882@qq.com`（按钮 mailto 预填主题/正文 + 页面明示） | 已上线；注意为个人 QQ 邮箱公开可见，介意可换品牌邮箱或表单服务 |
 | 采样数据 | `SAMPLED 12,486 QUERIES` / `INDEX 78 · CITED 64 · SHARE 31` | 手册示意数据，正式采样周报产出后替换（页面已注明"示意数据"） |
 | 引擎名单 | `CHATGPT / GEMINI / PERPLEXITY / 元宝 / 千问 / DEEPSEEK / 豆包` | 按手册 TYPE 页示例 + 实际监测平台 |
 | 域名/备案 | — | 部署时补充 ICP 备案号 |

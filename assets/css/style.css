@@ -355,6 +355,8 @@ p { max-width: 620px; }
   transition: background .15s ease, color .15s ease;
 }
 .contact .cta:hover { background: var(--beam); color: var(--paper); }
+.contact .mailto { color: inherit; text-transform: none; letter-spacing: .18em; transition: color .15s ease; }
+.contact .mailto:hover { color: var(--paper); }
 
 .footer { border-top: 1px solid var(--paper-12); padding: 30px var(--gutter) 42px; }
 .footer .spec { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; text-align: right; }
