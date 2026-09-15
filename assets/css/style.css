@@ -358,6 +358,20 @@ p { max-width: 620px; }
 .contact .mailto { color: inherit; text-transform: none; letter-spacing: .18em; transition: color .15s ease; }
 .contact .mailto:hover { color: var(--paper); }
 
+/* 表单（TRIM 法则：只有底边线，无卡片无圆角） */
+.cform { max-width: 560px; margin-top: 6px; }
+.frow { display: flex; flex-direction: column; gap: 8px; padding: 16px 0 14px; border-bottom: 1px solid var(--paper-12); transition: border-color .2s ease; }
+.frow:focus-within { border-bottom-color: var(--beam); }
+.cform input, .cform textarea {
+  background: transparent; border: 0; outline: 0;
+  color: var(--paper); font-family: var(--text); font-size: 15px; line-height: 1.6;
+  border-radius: 0; resize: vertical;
+}
+.cform input::placeholder, .cform textarea::placeholder { color: var(--paper-30); }
+.cform button.cta { border: 0; cursor: pointer; margin-top: 28px; }
+.cform button.cta[disabled] { opacity: .55; cursor: wait; }
+.fstatus { margin-top: 16px; min-height: 15px; }
+
 .footer { border-top: 1px solid var(--paper-12); padding: 30px var(--gutter) 42px; }
 .footer .spec { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; text-align: right; }
 .footer .spec span { transition: color .15s ease; }

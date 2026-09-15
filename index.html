@@ -179,8 +179,30 @@
   <section class="sec contact" id="contact">
     <span class="mono" style="display:block;margin-bottom:22px">CONTACT / 联系</span>
     <h2>你现在没被引用，<br>就是<span class="b">没被看见</span>。</h2>
-    <a class="cta" href="mailto:1037161882@qq.com?subject=%E9%A2%84%E7%BA%A6%E6%BC%94%E7%A4%BA%20%C2%B7%20%E8%AF%86%E5%85%89%20LUMEN&body=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A2%84%E7%BA%A6%E4%B8%80%E6%AC%A1%E8%AF%86%E5%85%89%20LUMEN%20%E7%9A%84%E6%BC%94%E7%A4%BA%E3%80%82%0A%0A%E5%85%AC%E5%8F%B8%2F%E5%93%81%E7%89%8C%EF%BC%9A%0A%E9%9C%80%E6%B1%82%E7%AE%80%E8%BF%B0%EF%BC%9A">预约演示 / BOOK A DEMO</a>
-    <p class="mono" style="margin-top:20px"><a class="mailto" href="mailto:1037161882@qq.com">1037161882@qq.com</a></p>
+    <form class="cform" id="contactForm" novalidate>
+      <input type="hidden" name="_subject" value="预约演示 · 识光 LUMEN">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="frow">
+        <label class="mono" for="f-name">称呼 / NAME *</label>
+        <input id="f-name" name="称呼" type="text" required placeholder="怎么称呼你">
+      </div>
+      <div class="frow">
+        <label class="mono" for="f-contact">联系方式 / CONTACT *</label>
+        <input id="f-contact" name="联系方式" type="text" required placeholder="手机 / 微信 / 邮箱">
+      </div>
+      <div class="frow">
+        <label class="mono" for="f-brand">公司或品牌 / BRAND</label>
+        <input id="f-brand" name="公司或品牌" type="text" placeholder="选填">
+      </div>
+      <div class="frow">
+        <label class="mono" for="f-msg">需求简述 / NOTES</label>
+        <textarea id="f-msg" name="需求简述" rows="3" placeholder="一句话说说你想解决什么"></textarea>
+      </div>
+      <button class="cta" type="submit" id="formSend">发送 / SEND</button>
+      <p class="mono fstatus" id="formStatus" role="status"></p>
+      <p class="mono" style="margin-top:16px">或直接写信 / <a class="mailto" href="mailto:1037161882@qq.com">1037161882@qq.com</a></p>
+    </form>
   </section>
 
   <!-- 页脚 -->

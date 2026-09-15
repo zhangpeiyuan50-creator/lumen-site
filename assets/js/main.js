@@ -58,18 +58,23 @@
   if (preloader && !REDUCED) {
     var pm = buildMark($("#preloaderMark"), 96);
     var pct = $("#pct");
-    var t0 = performance.now(), DUR = 1000;
+    var t0 = performance.now(), DUR = 1000, done = false;
+    function finishPre() {
+      if (done) return;
+      done = true;
+      preloader.classList.add("is-done");
+      revealHero();
+      setTimeout(function () { preloader.remove(); }, 700);
+    }
+    setTimeout(finishPre, DUR + 500); /* 兜底：后台标签 rAF 暂停时也能按时退场 */
     (function tick(now) {
+      if (done) return;
       var k = Math.min(1, (now - t0) / DUR);
       pct.textContent = ("00" + Math.round(k * 100)).slice(-3);
       var lit = Math.floor(k * 8);
       for (var i = 0; i < 8; i++) pm.segs[i].classList.toggle("on", i < lit);
       if (k < 1) requestAnimationFrame(tick);
-      else setTimeout(function () {
-        preloader.classList.add("is-done");
-        revealHero();
-        setTimeout(function () { preloader.remove(); }, 700);
-      }, 140);
+      else finishPre();
     })(t0);
   } else {
     if (preloader) preloader.remove();
@@ -375,5 +380,46 @@
       if (r.top < window.innerHeight && r.bottom > 0) scanSec.classList.add("is-in");
     }
   });
+
+  /* ---------- 表单：无后端收集（FormSubmit 免费转发到邮箱） ---------- */
+  var form = $("#contactForm");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var st = $("#formStatus"), btn = $("#formSend");
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      btn.disabled = true;
+      var prev = btn.textContent;
+      btn.textContent = "发送中 / SENDING";
+      st.textContent = "";
+      var data = { _subject: "预约演示 · 识光 LUMEN", _captcha: "false" };
+      new FormData(form).forEach(function (v, k) {
+        if (k.charAt(0) !== "_") data[k] = v;
+      });
+      var sendOnce = function () {
+        return fetch("https://formsubmit.co/ajax/1037161882@qq.com", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(data)
+        }).then(function (r) { return r.json(); });
+      };
+      sendOnce()
+        .catch(function () { return new Promise(function (res) { setTimeout(res, 1200); }).then(sendOnce); })
+        .then(function (j) {
+          if (j && (j.success === "true" || j.success === true)) {
+            st.textContent = "已发送 / SENT · 收到后我们会尽快回复";
+            st.style.color = "#D4FF00";
+            form.reset();
+            btn.textContent = "已发送 / SENT";
+          } else { throw new Error((j && j.message) || "bad response"); }
+        })
+        .catch(function () {
+          btn.disabled = false;
+          btn.textContent = prev;
+          st.innerHTML = "发送未成功（网络受限）· 可直接写信 <a class='mailto' href='mailto:1037161882@qq.com'>1037161882@qq.com</a>";
+          st.style.color = "";
+        });
+    });
+  }
 
 })();
